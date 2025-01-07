@@ -1,9 +1,13 @@
+Sistema de Ventas
+
 Hola. Este es un sitio de ventas simple en PHP, POO, AJAX y MYSQL.
 
 Para utilizarlo, debes tener instalado un servidor local y un manejador de base de datos. 
 Una vez instalada la base de datos dirigete al archivo "config.php" den tro de la carpeta "Config", 
 y configura los parámetros como su base de datos y el nombre que le coloco al archivo SQL descargado,
 allí también debe de ajustar la URL o dirección donde almacena el proyecto.
+
+Si quieres enviar correos electrónicos debes configurar el archivo "inicio.php" con los datos de su correo.
 
 Datos de inicio de sesión: 
 
