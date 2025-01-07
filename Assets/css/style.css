@@ -1,0 +1,1109 @@
+/* ESTILOS GENRALES DE LA PAGINA, HECHOS POR MI XD*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*funcion para quitar objetos de la vista*/
+.d-none {
+  display: none;
+}
+
+.select2-dropdown {
+  max-height: 150px;
+  /* Ajusta esta altura según tus necesidades */
+  overflow-y: auto;
+}
+
+
+/*estilos de los botones del datatable*/
+/*
+.dataTables_wrapper .dt-buttons {
+    float: none;
+    text-align: center;
+    
+}
+.excel-button {
+    background-color: green; /* Cambia el color a verde 
+    color: white;
+    /* Otros estilos según tus preferencias 
+    padding: 10px;
+    border-radius: 6px;
+}
+.pdf-button {
+    background-color: red; /* Cambia el color a rojo 
+    color: white;
+    /* Otros estilos según tus preferencias 
+    padding: 10px;
+    border-radius: 6px;
+}
+*/
+/*ESTILOS DEL GENERALES DEL BODY*/
+body {
+  background: #e9ecf4;
+  background-image: linear-gradient(rgba(203, 228, 254, 0.708),
+      rgba(203, 228, 254, 0.707)),
+    url("../img/whatsapp2.png");
+  background-size: cover;
+
+  color: #000;
+  font-family: "Comic Sans", "urbanist", sans-serif;
+  font-size: 18px;
+}
+
+/*ESTILOS DEL GENERALES DEL TODA LA PAGIAN O V=CONTENEDOR PRINCIAPAL*/
+.contenedor {
+  width: 100%;
+  height: auto;
+  max-width: 2000px;
+  margin: 0px auto;
+  display: grid;
+  /*gap: 7px;*/
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas:
+    "header header header header header header"
+    "sidebar  contenido contenido contenido  contenido contenido"
+    "sidebar contenido contenido contenido contenido contenido"
+    "footer footer footer footer footer footer";
+}
+
+/*ESTILOS DEL GENERALES DEL PARA CADA PARTE DEL CUERPO*/
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .footer {
+  background: #fff;
+  padding: 20px;
+  /*border-radius: 10px;*/
+}
+
+/*ESTILOS PARA EL HEADER*/
+.contenedor .header {
+  background: #2f6ae9f0;
+  color: #ffffff;
+  grid-area: header;
+}
+
+/*ESTILOS GENERALES PARA EL CONTENIDO DE LA PAGINA*/
+.contenedor .contenido {
+  grid-area: contenido;
+  background: #f7f1f0;
+  min-height: 580px;
+}
+
+/*margen del titulo de cada pagina*/
+.contenido .titulo-pag {
+  margin: 30px 0px 0px 6%;
+}
+
+/*ESTILOS DE LA LISTA DE CLIENTES*/
+
+.prueba_resposive {
+  overflow-x: auto;
+  width: auto;
+}
+
+.table-inicio {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: none;
+  position: relative;
+  left: 5%;
+}
+
+/*MAS ESTILOS DE LA LISTA DE CLIENTES */
+.table-inicio table,
+.table-inicio table tr,
+.table-inicio table td,
+.table-inicio table th {
+  border-collapse: collapse;
+  padding: none;
+}
+
+.table-inicio table th {
+  padding: 10px 10px;
+  background-color: #1e3c72;
+}
+
+.table-inicio table td {
+  border-bottom: solid 1px black;
+  text-align: left;
+}
+
+.table-inicio table tr:hover {
+  background: #d3d3d379;
+}
+
+.table-inicio .sticky {
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+  position: sticky;
+  top: 0;
+}
+
+
+/*ESTILOS  DEL FOOTER*/
+.contenedor .footer {
+  background: #10244e;
+  color: #fff;
+  grid-area: footer;
+}
+
+/*ESTILOS DEL LOGIN*/
+
+.login {
+  display: block;
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+  height: auto;
+  width: 30%;
+  max-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -50%);
+
+  padding: 7px;
+  border-radius: 15px;
+  border: 1.5px solid rgba(40, 43, 59, 0.805);
+}
+
+.login label {
+  font-size: 19px;
+  margin-left: 10px;
+}
+
+.login input,
+.login button {
+  border: 1px solid #000;
+  padding: 8px;
+  width: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.login button[type="submit"] {
+  cursor: pointer;
+  background-color: rgba(0, 84, 210, 0.786);
+  color: #fff;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.login button[type="submit"]:hover {
+  background-color: rgba(37, 88, 164, 0.9);
+}
+
+.login h2 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*ESTILOS DE LA VISTA DE ERROR*/
+.error404 {
+  display: block;
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+  height: auto;
+  width: 35%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -50%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(88, 79, 79, 0.805);
+}
+
+/*ACCIONES DEL CRUD (BOTONES)*/
+.acciones_activo {
+  color: #0f9608;
+}
+
+.acciones_inactivo {
+  color: red;
+}
+
+.acciones_crud {
+  display: inline-flex;
+  margin: 15px 10px 10px 0px;
+  border-radius: 6px;
+}
+
+
+/*estilos del icono de pdf del historial compras*/
+
+.boton_acciones_permisos {
+  background-color: #2e2e2eec;
+  color: #fff;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+.boton_acciones_permisos:hover {
+  color: #2e2e2eec;
+  background-color: #f1f1f1;
+  border-color: #2e2e2eec;
+}
+
+.boton_acciones_reporte {
+
+  background-color: #f26250;
+  color: black;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+.boton_acciones_reporte:hover {
+  color: #c53a28;
+  background-color: #f1f1f1;
+  border-color: #c53a28;
+}
+
+.boton_acciones_edit {
+  background-color: rgba(73, 152, 255, 0.922);
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 5px;
+
+}
+
+.boton_acciones_delete:hover {
+  color: #f26250;
+  background-color: #f1f1f1;
+  border-color: #f26250;
+}
+
+.boton_acciones_edit:hover {
+  color: #4869f0;
+  background-color: #f1f1f1;
+  border-color: #4869f0;
+}
+
+.boton_acciones_delete {
+  font-size: 19px;
+  background-color: #f26250;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  padding: 5px;
+
+}
+
+.boton_acciones_reingresar:hover {
+  color: #159f0ede;
+  background-color: #f1f1f1;
+  border-color: #159f0ede;
+}
+
+.boton_acciones_reingresar {
+  background-color: #2dc925bd;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 5px;
+}
+
+.boton_acciones_detalles {
+  background-color: #eae609dc;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 5px;
+}
+
+.boton_acciones_detalles:hover {
+  color: #939000;
+  background-color: #f1f1f1;
+  border-color: #000000;
+}
+
+/***********************ESTILOS DEL MODAL (USUARIOS)*/
+
+.cabecera_modal {
+  border-bottom: 1px solid #000;
+}
+
+
+.modal_open {
+  background-color: rgba(0, 110, 255, 0.975);
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  padding: 12px 25px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  position: relative;
+  bottom: -20px;
+  left: 88%;
+  transform: translate(-51%, -50%);
+}
+
+.modal_open:hover {
+  background-color: #edededb8;
+  color: #00318b;
+  border: 1.5px solid #00318b;
+  cursor: pointer;
+}
+
+/*MODAL EN SI*/
+
+.modal .frm_Detalle input {
+  font-weight: 600;
+  color: #000;
+}
+
+.is-invalid {
+  background-color: #fa636360;
+  font-size: 15px;
+  color: #000;
+  transition: background-color 1s;
+  padding: 5px;
+  border-radius: 6px;
+
+}
+
+.modal {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s 0.9s;
+  --transform: translateY(-100vh);
+  --transition: transform 0.8s;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform 0.8s 0.8s;
+}
+
+.modal__container {
+  margin: auto;
+  width: 110%;
+  /*ancho maximo dependiendo "frm_modal_v1 o frm_modal_v2"
+  max-width: var(--ancho-maximo); ideas locas*/
+  max-width: 550px;
+  max-height: 90%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 2em 1.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+  /*background-image: url("../img/whatsapp2.png");*/
+}
+
+/*boton "CANCELAR" DE DENTRO DEL MODAL*/
+.modal_close {
+  margin: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f26250;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  max-width: 150px;
+  font-weight: 300;
+  transition: background-color 0.3s;
+  margin-right: 30px;
+  margin-left: -10px;
+}
+
+.botones {
+  display: flex;
+}
+
+.modal_close:hover {
+  color: #f26250;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*BOTON "REGISTRAR" DE DENTRO DEL LOGIN*/
+
+.modal_register {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(73, 152, 255, 0.922);
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  max-width: 150px;
+  font-weight: 300;
+  transition: background-color 0.3s;
+  margin-left: 0px;
+}
+
+.modal_register:hover {
+  color: #5070f2;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.botons_modal {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/************ESTILOS PARA DEL FORMULARUO DEL MODAL*/
+/*version 1 con dos columnas*/
+.frm_modal_v1 {
+  display: grid;
+
+  grid-template-columns: repeat(2, auto);
+  /*grid-template-rows: repeat(3, auto);*/
+  background-color: #fffefdb2;
+
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 15px 0 0px 20px;
+  border-radius: 6px 6px 6px 6px;
+  border: 1.5px solid rgb(61, 59, 59);
+}
+
+.frm_modal_v1 input,
+.frm_modal_v1 select {
+  width: auto;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/***version 2 con 1 columna*/
+.frm_modal_v2 {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  background-color: #fffefdb2;
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 15px 0 0px 20px;
+  border-radius: 6px 6px 6px 6px;
+  border: 1.5px solid rgb(61, 59, 59);
+}
+
+.frm_modal_v2 input,
+.frm_modal_v2 select {
+  width: 90%;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal .max_width_usuario {
+  grid-column: span 2;
+}
+
+.modal .max_width_usuario input {
+  width: 93%;
+}
+
+.text_end_modal {
+  margin-bottom: 10px;
+}
+
+.texto_rojo {
+  color: #ff0000;
+}
+
+/********ESTILOS DEL MENU LATERAL*/
+.sidebar .user_name {
+  width: 210px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  overflow-x: auto;
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  background: #2f6ae9f0;
+  color: #fff;
+}
+
+.sidebar .usuario {
+  margin-top: 20px;
+}
+
+.sidebar .img_user {
+  margin: 25px 0;
+}
+
+.login_out {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f26350;
+  padding: 2px 20px;
+  border: 1px solid;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+  width: 100px;
+}
+
+.nav__link {
+  color: #ffffff;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+
+}
+
+.nav__link--inside {
+  border-radius: 6px;
+  padding-left: 20px;
+  text-align: left;
+
+}
+
+.list__button:hover {
+  background-color: rgba(85, 159, 255, 0.922);
+  border-radius: 10px;
+  padding-right: 12px;
+  padding-left: 5px;
+}
+
+.nav__link--inside:hover {
+  background-color: rgba(85, 159, 255, 0.922);
+}
+
+.list {
+  min-width: 250px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.list__item {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list__item--click {
+  cursor: pointer;
+}
+
+.list__button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.arrow .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.fa-chevron-right {
+  margin-left: auto;
+  transition: transform 0.5s;
+}
+
+.list__show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #ffffff;
+  list-style: none;
+  transition: height 0.5s;
+  height: 0;
+}
+
+.list__button.active {
+  background-color: rgba(85, 159, 255, 0.922);
+  /* Cambia al color deseado */
+  border-radius: 6px;
+  padding-right: 12px;
+  padding-left: 5px;
+}
+
+/***************************MOULO DE STOCK*/
+
+.Compras_card {
+  display: grid;
+
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  width: 1000px;
+
+  margin-top: 0px;
+  margin-left: 6%;
+  padding: 15px;
+  border-radius: 0px 0px 6px 6px;
+  border: 1.5px solid rgb(61, 59, 59);
+  /*border-bottom-color: #f7f1f0;*/
+}
+
+.Compras_card input,
+.Compras_card textarea {
+  width: auto;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f3f3f380;
+  color: #000000;
+}
+
+.max_width_empresa input {
+  width: 250px;
+}
+
+.text_top_compras {
+  grid-column: span 4;
+  margin-bottom: 20px;
+}
+
+.card_stock_total {
+  display: grid;
+
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  width: 1000px;
+
+  margin-top: 0px;
+  margin-left: 6%;
+  padding: 15px;
+  border-radius: 6px 6px 6px 6px;
+  /*border: 1.5px solid rgb(61, 59, 59);*/
+}
+
+.card_stock_total input,
+.card_stock_total select {
+  width: auto;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+  color: #000000;
+  background-color: #f3f3f380;
+}
+
+/**ESTILOS DEL SELECT DE CLIENTES*/
+.cliente_venta {
+  margin-top: 10px;
+}
+
+.select2-container--classic .select2-results__option {
+  color: #333;
+  /* Cambia el color del texto */
+  background-color: #f4f4f4;
+  /* Cambia el fondo */
+}
+
+/*******************/
+
+.cliente_venta select {
+  width: 200px;
+  font-weight: 600;
+}
+
+
+.datos_cliente_venta input {
+  background-color: rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+}
+
+.total_stock input {
+  background-color: rgba(220, 220, 220, 0.9);
+  font-size: 19px;
+  font-weight: 600;
+  width: 190px;
+}
+
+.cantidad_stock input {
+  width: 100px;
+}
+
+.descrip_stock input {
+  width: 300px;
+  background-color: rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+}
+
+.name_stock input {
+  background-color: rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+}
+
+.precio_stock input {
+  background-color: rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+  width: 150px;
+}
+
+.sub_total_stock input {
+  background-color: rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+  width: 150px;
+}
+
+.compra_button {
+  margin-top: 10px;
+  background-color: rgb(0, 96, 222);
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.compra_button:hover {
+  background-color: #edededb8;
+  color: #00318b;
+  border: 1.5px solid #00318b;
+  cursor: pointer;
+}
+
+.tabla_compra {
+  width: 1030px;
+}
+
+.tabla_compra th {
+  width: 150px;
+  text-align: left;
+  padding: 0 0 0 0;
+}
+
+.tabla_compra .table_id {
+  width: 50px;
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+}
+
+.cabecera_stock {
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+  width: 1012px;
+  padding: 20px 0px 20px 20px;
+  margin-top: unset;
+  border-radius: 6px 6px 0px 0px;
+}
+
+/*estilos de la tabla que se genera en funciones.js cargarDetalle();*/
+.tabla_compra .body_table_usuarios td {
+  padding: 0px 0px 0px 15px;
+}
+
+/*estilos de modulo de los datos de la empresa */
+.button_datos_empresa {
+  padding-top: 28px;
+}
+
+/*estilos de modulo de los datos de la tasas */
+.button_datos_tasas {
+  padding-top: 15px;
+}
+
+.container_tasas {
+  margin-left: 0;
+  margin-top: 60px;
+  width: 1150px;
+}
+
+/*estilos de la tabla que se genera en funciones.js cargarDetalle();*/
+.table-inicio .body_table_tasas td {
+  padding: 20px 0px 20px 15px;
+}
+
+.currency-input {
+  position: relative;
+}
+
+.currency-input input {
+  padding-left: 35px;
+  /* Ajusta el espacio según sea necesario */
+}
+
+.currency-input::before {
+  content: 'Bs:';
+  position: absolute;
+  left: 5px;
+  top: 58%;
+  transform: translateY(-50%);
+  color: #000000;
+}
+
+/*formulario para recuperar la contrase;a*/
+.login_recuperar {
+
+  background: linear-gradient(rgba(158, 200, 255, 0.922),
+      rgba(73, 152, 255, 0.922));
+  height: auto;
+  width: 390px;
+  /*max-width: 40px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -50%);
+  padding: 7px 7px 15px 7px;
+  padding-top: 10px;
+  border-radius: 15px;
+  border: 1.5px solid rgba(40, 43, 59, 0.805);
+}
+
+.frm_login_recuperar {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  /*grid-template-rows: repeat(3, auto);*/
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 15px 15px 0px 15px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.frm_login_recuperar input {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.recuperar_clave {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 10px 0px;
+  text-decoration: none;
+}
+
+.recuperar_clave a {
+  color: #0d2c9b;
+  text-decoration: none;
+}
+
+.recuperar_clave a:hover {
+  color: #000a96;
+  text-decoration: underline;
+}
+
+/*estilos de los widgets del inicio*/
+.contenedor_widgets {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 40px 30px 0px 6%;
+  width: min-content;
+}
+
+.widget_usuarios {
+  background-color: #2347c8;
+  width: 250px;
+  border-radius: 8px;
+  margin: 0px 30px 30px 0px;
+  color: #f7f1f0;
+}
+
+.widget_clientes {
+  background-color: #2d993e;
+  width: 250px;
+  border-radius: 8px;
+  margin: 0px 30px 30px 0px;
+  color: #f7f1f0;
+}
+
+.widget_productos {
+  background-color: #d12c2cec;
+  width: 250px;
+  border-radius: 6px;
+  margin: 0px 30px 30px 0px;
+  color: #f7f1f0;
+}
+
+.widget_ventas {
+  background-color: #e39714;
+  width: 250px;
+  border-radius: 6px;
+  margin: 0px 30px 30px 0px;
+  color: #f7f1f0;
+
+}
+
+.widget_tasa {
+  background-color: #c24a22;
+  width: 250px;
+  border-radius: 6px;
+  margin: 0px 30px 30px 0px;
+  color: #f7f1f0;
+
+}
+
+.cabecera_widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f7f1f0;
+}
+
+.cuerpo_widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+
+}
+
+.cuerpo_widget a {
+  color: #f7f1f0;
+  text-decoration: none;
+}
+
+/*ESTILOS  DEL MODO MOVIL*/
+@media screen and (max-width: 768px) {
+
+  /*ESTILOS  GENERALES*/
+  .contenedor {
+    gap: 7px;
+    width: 95%;
+    grid-template-areas:
+      "header header header header header header"
+      "sidebar sidebar sidebar sidebar sidebar sidebar"
+      " contenido contenido contenido contenido contenido contenido"
+      "footer footer footer footer footer footer";
+  }
+
+  .login {
+    width: 75%;
+    max-width: 400px;
+  }
+
+  .login_recuperar {
+    width: 350px;
+  }
+
+
+  /*ESTILOS  DE LLAS PARTES DE LA PAGINA*/
+  .contenedor .header,
+  .contenedor .contenido,
+  .contenedor .sidebar,
+  .contenedor .footer {
+    border-radius: 10px;
+  }
+
+  /*ESTILOS DEL MODAL (USUARIO)*/
+  .modal__container {
+    padding: 2em 1.5em;
+  }
+
+  .modal_open {
+    position: relative;
+    top: 7%;
+    left: 80%;
+    transform: translate(-51%, -50%);
+  }
+
+  .dataTables_wrapper .dt-buttons {
+    float: none;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    bottom: 310px;
+    left: 120%;
+    transform: translate(-51%, -50%);
+  }
+}
