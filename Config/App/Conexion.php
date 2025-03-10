@@ -7,7 +7,7 @@ class Conexion
     public function __construct()
     {
         //CONEXION CON LA BASE DE DATOS
-        $pdo = "mysql:host=" . host . ";dbname=" . db . ";.charset.";
+        $pdo = "mysql:host=" . host . ";dbname=" . db . ";charset=" . charset . ";";
 
         //try permite facilitar la captura de excepciones potenciales
         try {
